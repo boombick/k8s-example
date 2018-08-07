@@ -2,11 +2,11 @@
 kind: ReplicationController
 apiVersion: v1
 metadata:
-  name: guestbook
+  name: guestbook-pv
   labels:
     app: guestbook
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     app: guestbook
   template:
